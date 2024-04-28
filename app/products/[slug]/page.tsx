@@ -1,17 +1,11 @@
 import Image from "next/image";
 
-interface CardProps {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  imageUrl: string; // Add imageUrl prop
-}
-const page: React.FC<CardProps> = () => {
+const page = () => {
   const data = {
     id: 0,
-    name: "Mushroom Orange Lamp",
-    description: "Mushroom Orange Lamp desc",
+    name: "White Air Jordan Shoe",
+    description:
+      "White Air Jordan Shoe with rubber sole and comes in different sizes",
     price: 100,
     imageUrl:
       "https://res.cloudinary.com/dyvozwcru/image/upload/v1712563522/cld-sample-5.jpg",
@@ -40,7 +34,7 @@ const page: React.FC<CardProps> = () => {
             width={600}
             height={600}
             alt={data.name}
-            src={`${process.env.SUPABASE_URL}/storage/v1/object/public/storage/${data.imageUrl}`}
+            src={data.imageUrl}
           />
         </div>
         <div className="bg-gray-953 p-6 w-full">
