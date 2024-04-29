@@ -37,6 +37,16 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen max-w-[100rem] mx-auto">
+      <header className="header abosolute rounded-md top-0 left-0 bottom-0 right-0">
+        <div className="shadow-lg shadow-yellow-500 md:py-[20%] lg:py-[22%] py-[50%]">
+          <h1 className="text-center lg:text-6xl text-white font-extrabold ">
+            <span className="text-yellow-500">Swift-Global</span> Market Place
+          </h1>
+          <p className="text-center lg:text-2xl pt-4 text-yellow-500">
+            Shop on a go
+          </p>
+        </div>
+      </header>
       <div className="px-12 pt-12 pb-20">
         <div className="flex flex-col xl:flex-row gap-2 xl:gap-40">
           <div className="pt-12">
