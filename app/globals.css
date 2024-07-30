@@ -19,12 +19,6 @@
     @apply border-2 w-full rounded-lg h-16 outline-dashed outline-green-951;
   }
 
-  header {
-    padding: 16px;
-    border-bottom: 2px solid #333;
-    background: hsl(345, 71%, 90%);
-  }
-
   label {
     @apply text-2xl text-gray-952;
   }
@@ -32,16 +26,22 @@
 .header {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   background: black;
 }
-@media screen and (min-width: 750px) {
-  .header {
-    height: 100vh;
-  }
-}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.header {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./banner.jpg);
 }
