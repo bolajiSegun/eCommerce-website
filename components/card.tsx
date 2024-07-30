@@ -19,23 +19,25 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <Link href={`/products/${id}`}>
-      <div className="max-w-xl bg-gray-953 rounded-sm overflow-hidden h-full flex flex-col justify-between">
+      <div className="max-w-xl bg-gray-953 rounded-sm overflow-hidden h-[100%] flex flex-col justify-between">
         <div>
-          <div className="relative h-96 bg-center ">
+          <div className="relative h-40 bg-center ">
             <Image
               src={imageUrl}
               alt={name}
               fill={true}
               className="rounded-t"
-              sizes="100vw"
+              sizes="25%"
               style={{
                 objectFit: "cover",
               }}
             />
           </div>
-          <div className="px-6 py-4">
-            <div className="text-2xl mb-2 uppercase line-clamp-2">{name}</div>
-            <p className="text-gray-700 text-base truncate uppercase">
+          <div className="px-2 py-1">
+            <div className="md:text-2xl font-semibold mb-2 uppercase line-clamp-2">
+              {name}
+            </div>
+            <p className="text-gray-700 text-base truncate uppercase text-sm">
               {description}
             </p>
           </div>
