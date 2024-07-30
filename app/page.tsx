@@ -27,9 +27,6 @@ export default async function Home() {
     .from("easysell-products")
     .select();
 
-  if (!topProducts) {
-    return <p>All top products are gone at the moment...</p>;
-  }
   if (!products) {
     return <p>Not found</p>;
     return notFound();
